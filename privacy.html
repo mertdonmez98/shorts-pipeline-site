@@ -68,8 +68,14 @@
     </div>
 
     <div class="card">
-      <h2>Scope of access requested</h2>
-      <p>The app requests only the <code>youtube.upload</code> OAuth scope. This scope is used exclusively to upload videos to the owner's own YouTube channel. The app does not request access to read, modify, or delete any other YouTube or Google account data.</p>
+      <h2>Scopes of access requested</h2>
+      <p>The app requests only the following OAuth scopes, and uses them solely for the owner's own YouTube channel:</p>
+      <ul>
+        <li><code>youtube.upload</code> &mdash; to upload videos to the owner's channel.</li>
+        <li><code>youtube.readonly</code> &mdash; to read the list and status of the owner's own uploaded videos.</li>
+        <li><code>yt-analytics.readonly</code> &mdash; to read view and retention statistics of the owner's own videos, used only to improve content quality.</li>
+      </ul>
+      <p>The app does not modify or delete existing videos, and does not access any other Google account data. Aggregated statistics for the owner's own videos are stored privately by the owner and are never shared or sold.</p>
     </div>
 
     <div class="card">
